@@ -1,0 +1,37 @@
+<!DOCTYPE html><html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0,minimal-ui">
+
+	<meta name="author" content="Fabio Vergani 1975"/>
+	<meta name="description" content="github.com/FabioVergani"/>
+
+	<link rel="stylesheet" type="text/css" href="./langbar.css">
+
+	<link rel="alternate" hreflang="en" href="./langbar-en.htm" />
+	<link rel="alternate" hreflang="it" href="./langbar-it.htm" />
+	<link rel="alternate" hreflang="de" href="./langbar-de.htm" />
+
+ </head>
+ <body>
+
+
+<script>
+const d=window.document;
+
+let e,s='',dELang=d.documentElement.lang;
+for(let e,i=0,m=d.querySelectorAll('head link[rel="alternate"][hreflang]'),j=m.length,l,k=dELang;i<j;++i){
+ e=m[i];
+ if((l=e.hreflang)!==k){s+=('<a href="'+e.href+'">'+l+'</a>');};
+};
+(e=d.createDocumentFragment().appendChild(d.createElement('label'))).id='switch-lang';
+//e.innerHTML=('<input type="checkbox" style="background-image:url(flag/raster/'+dELang+'.png)"/><p>'+s+'</p>');
+e.innerHTML=('<input type="checkbox" style="background-image:url(flag/vector/'+dELang+'.svg)"/><p>'+s+'</p>');
+d.body.appendChild(e);
+
+
+e=s=lang=null;
+</script>
+
+</body>
+</html>

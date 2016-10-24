@@ -1,0 +1,20 @@
+#switch-lang{float:right;margin:0;padding:0;border:1px solid #000}
+
+#switch-lang,
+#switch-lang *{outline:0;font:0/0 sans-serif;box-sizing:border-box;background-size:contain}
+
+#switch-lang,
+#switch-lang p{display:inline-block}
+#switch-lang p{margin:0 2px 2px;padding:0 2px 2px;background:#eee}
+
+#switch-lang input{margin:4px;width:20px;height:13px;background:#eee none no-repeat;-webkit-appearance:none;}
+#switch-lang input:not(:checked)+p{display:none}
+
+#switch-lang input,
+#switch-lang a{display:block;border:0;padding:0}
+
+#switch-lang a{text-decoration:none;color:#5858d7}
+#switch-lang a:hover{text-decoration:underline;color:#00e}
+
+#switch-lang a,
+#switch-lang a:hover{font:11px/11px sans-serif;margin:2px 0 0;width:20px;height:10px;}
